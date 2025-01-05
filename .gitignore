@@ -1,0 +1,16 @@
+# General cache and temporary files
+__pycache__/
+*.py[cod]
+*.tmp
+*.temp
+*.log
+*.npy
+.ipynb_checkpoints/
+
+# Ignore specific patterns globally
+**/.ipynb_checkpoints/
+**/githubs/
+**/test_*
+
+# VSCode settings
+.vscode/

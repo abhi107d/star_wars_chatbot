@@ -1,0 +1,117 @@
+/* General Body */
+body {
+    font-family: calibri;
+    background-image: url("/static/images/background.jpg"); 
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    box-sizing: border-box;
+    font-weight: bold;
+    font-size: large;
+    font-style: italic;
+    
+}
+
+/* Chat container */
+.chat-container {
+    width: 400px;
+    height: 600px;
+    background-color: #000000;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+}
+
+/* Chatbox */
+.chat-box {
+    flex: 1;
+    padding: 10px;
+    overflow-y: auto;
+    border-radius: 10px;
+    border-bottom: 2px solid #000000;
+    background-image:url("/static/images/chatbg.jpeg");
+    background-size: cover;
+
+    height: 100%; /* Or any specific height */
+    overflow-y: auto; /* Enables vertical scrolling */
+    scrollbar-width: none;
+}
+
+/* User messages */
+.user-message {
+    background-color: #a15ea2;
+    color:white;
+    border-radius: 10px;
+    padding: 10px;
+    margin-bottom: 5px;
+    max-width: 70%;
+    align-self: flex-end;
+
+    max-width: 300px; 
+    word-wrap: break-word; 
+    word-break: break-word; 
+    overflow-wrap: break-word;
+}
+
+/* Bot messages */
+.bot-message {
+    background-color: #3e398e;
+    color:white;
+    border-radius: 10px;
+    padding: 10px;
+    margin-bottom: 5px;
+    max-width: 70%;
+    align-self: flex-start;
+
+
+    max-width: 300px; 
+    word-wrap: break-word; 
+    word-break: break-word; 
+    overflow-wrap: break-word;
+}
+
+
+/* Input and button */
+.chat-input {
+    display: flex;
+    padding: 10px;
+    border-top: 2px solid #5c6976;
+}
+
+.chat-input input {
+    flex: 1;
+    padding: 10px;
+    font-size: 14px;
+    border-radius: 5px;
+    border: 1px solid#5c6976;
+    margin-right: 10px;
+
+    background-color: #000000;
+    color: rgb(186, 141, 223);
+    font-weight: bold;
+    font-size: large;
+    font-style: italic;
+    border:none;
+    outline: none;
+}
+input::placeholder {
+    color: rgb(143, 143, 143); /* Change this to your desired color */
+    font-style: italic; /* Optional: make it italic */
+}
+.chat-input button {
+    padding: 10px 15px;
+    background-color: #3e398e;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.chat-input button:hover {
+    background-color: #1e1c41;
+}
